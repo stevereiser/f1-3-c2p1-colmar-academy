@@ -1,0 +1,352 @@
+html {
+    font-family: helvetica, sans-serif;
+    font-size: 16px;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.5;
+    color: #464646;
+}
+
+/*-------- header--------*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#Acadamy{
+    color: #b1b1b1;
+}
+
+header a{
+    padding-left: 16px;
+}
+
+.icon {
+    display: none;
+}
+/*-------- text links --------*/
+
+a{
+  text-decoration: none;
+}
+a:link {
+    color: #464646;
+}
+a:visited {
+    color: #464646;
+}
+a:hover {
+    color: #03a0ff;
+}
+a:active {
+    color: #333;
+}
+
+.about a:link {
+    color: #00a6f6;
+}
+.about a:visited {
+    color: #00a6f6;
+}
+.about a:hover {
+    color: #4cc0f8;
+}
+.about a:active {
+    color: #0074ac;
+}
+
+/*-------- text --------*/
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+}
+
+h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding-bottom: 8px
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: 900;
+    padding-bottom: 24px;
+}
+
+p{
+    color: #717171;
+}
+#boldtext{
+    font-weight: 600;
+}
+
+/*------- button -----------*/
+
+.button a{
+    background-color: #5a5a5a;
+    color: white;
+    display: flex;
+    justify-content: center;
+    padding: 8px 0;
+    margin-top: 24px;
+    
+}
+.button a:hover {
+    background-color: #b1b1b1;
+    transition: background 200ms ease;
+}
+.button a:active {
+    color: #333;
+}
+
+/*-------- container general --------*/
+
+.container {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    padding-left: 24px;
+}
+
+.banner, .learning{
+    background-color: #f1f1f1;
+}
+
+/*-------- container banner --------*/
+
+.side-banner{
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+}
+
+.main-left {
+    max-width: 60%;
+    padding-right: 24px;
+}
+
+/*-------- container main --------*/
+
+.main-right {
+    display: flex;
+    flex-direction: column;
+    max-width: 40%;
+}
+.main-right-sub {
+    display: flex;
+    align-items: center; 
+}
+.main .main-right-sub {
+    border: 1px solid #f1f1f1;
+    padding-right: 24px;
+}
+.main-right-sub img{
+    width: 35%;
+    margin: 16px;
+}
+
+#gray-background{
+    background-color: #e3e3e3;
+}
+.main-left p{
+    padding-bottom: 32px;
+}
+.main-right-sub .mobile{
+    display: none;
+    }
+
+/*------ learning --------------*/
+
+.learning {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+.image-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.blocks{
+    display: flex;
+    flex-direction: column;
+    margin: 16px;
+    max-width: 30%;
+    background-color: #fff;
+}
+.block-info {
+    padding: 16px 16px 24px 16px;
+}
+.block-info p{
+    padding: 4px 0;
+}
+
+/*------ image and video -------*/
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+video {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+/*---------- thesis --------------*/
+
+.thesis {
+    display: flex;
+    flex-direction: column;
+}
+.sub-container{
+    display: flex;
+}
+.main-left h4{
+    padding-top: 24px;
+}
+
+/*---------- footer -------------*/
+
+footer {
+    display: flex;
+    padding: 16px 24px;
+    border-top: 1px solid #f1f1f1;
+    justify-content: space-between;
+    align-items: center;
+
+}
+footer a{
+    padding-left: 16px;
+}
+
+/*---------- media queries 680px -------*/
+
+@media only screen and (max-width: 680px) {
+    nav,
+    .logo{
+        display: none;
+    }
+    
+    .icon {
+        display: flex;
+    }
+    header {
+        justify-content: space-around;
+    }
+    h4{
+         font-size: 1.5rem;   
+    }
+    .container {
+        flex-direction: column;
+    }
+    .button a{
+        background-color: #b1b1b1;
+    }
+    
+/*---------- media - banner -------*/    
+    
+    .side-banner {
+        max-width: 100%;
+        padding-right: 24px;
+    }
+    
+/*---------- media - main -------*/
+    
+    .main .main-left {
+        display: none;
+    }
+    .main .main-right {
+        max-width: 100%;
+        padding-right: 24px
+    }
+    .main-right-sub {
+        flex-direction: column;
+    }
+    .main .main-right-sub {
+        border: none;
+        align-items: flex-start;
+        padding: 0;
+    }
+    .main-right-sub img{
+        display: none;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .main-right-sub .mobile{
+        display: flex;
+        min-width: 100%;
+    }
+    #gray-background{
+        background: none;
+    }
+    .about {
+        padding-left: 24px;
+    }
+    
+/*---------- media - learning -------*/    
+    
+    .learning{
+        background: none;
+        padding-left: 24px;
+        padding-right: 24px;;
+    }
+    .blocks{
+        min-width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    .block-info{
+        padding: 8px 0 0 0;
+    }
+    .image-blocks {
+        flex-direction: column;
+        min-width: 100%;
+    }
+    .blocks img {
+        display: none;
+    }
+    .block-info p {
+        display: none;
+    }
+    .block-info h4 {
+        background-color: #e3e3e3;
+        color: white;
+        display: flex;
+        padding: 16px 0 24px 16px;
+        color: #464646;
+    }
+
+/*---------- media - thesis -------*/ 
+    
+    .thesis .main-right{
+        display: none;
+    }
+    .main-left {
+        max-width: 100%;
+    }
+    
+/*------------- media - footer ---------*/
+    
+    .terms span{
+        display: none;
+    }
+}
